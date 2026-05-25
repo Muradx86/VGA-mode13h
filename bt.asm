@@ -2,7 +2,7 @@ BITS 16
 ORG 0x7C00
 section .bss
 BT_DRIVE: RESB 8
-
+;TempleOS Boot Loader.
 section .text
 BT_START:
 	CLI
