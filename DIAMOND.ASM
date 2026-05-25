@@ -49,7 +49,8 @@ FUN_HT_CONT:
 	LOOP @@3
 	MOV CX,50
 @@4:;SHIFTER LO. NOTE: This shifting functions are also
-	;used as Ready Functions. Rules: BX- starting point CX- magintude of vector. 
+	;used as Ready Functions. Rules: BX- starting point CX- magintude of vector.
+	;If you are going to use it as function, don't forget RET because it doesn't return automatically :)
 	ADD BX,319
 	MOV BYTE [ES:BX],12
 	LOOP @@4
