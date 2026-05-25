@@ -48,7 +48,8 @@ FUN_HT_CONT:
 	MOV BYTE [ES:BX],12
 	LOOP @@3
 	MOV CX,50
-@@4:;SHIFTER LO
+@@4:;SHIFTER LO. NOTE: This shifting functions are also
+	;used as Ready Functions. Rules: BX- starting point CX- magintude of vector. 
 	ADD BX,319
 	MOV BYTE [ES:BX],12
 	LOOP @@4
