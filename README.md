@@ -14,5 +14,5 @@ A bootable VGA mode13h *Graphics Programming* in assembly without BIOS interrupt
 -
 TANKI uses x87 FPU
 TANKI finds coordinates(Trajectory) with following formulas:
-x = v0*(SQRT(2*H/G)
-y = v0*T^2 - GT^2/2
+#x = v0*(SQRT(2*H/G)#
+#-y = v0*T^2 - GT^2/2#
