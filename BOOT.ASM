@@ -28,16 +28,5 @@ BT_START:
 	INT 0x13
 
 	JMP 0x1000
-times 446-($-$$) db 0
-DW 0x80
-DB 0
-DB 0
-DB 0
-DB 0
-DB 0 ;HEAD
-DB 60 ;SECTOR
-DB 0 ;CYLINDER
-DD 0x1000
-DD 60
 times 510-($-$$) db 0
 dw 0xaa55
