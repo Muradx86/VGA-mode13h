@@ -26,10 +26,15 @@ For Assembling Use NASM(The Netwide Assembler) following commands:
 -
 nasm -fbin TANKI.asm -o TANKI.bin
 
+
+
 nasm -fbin BOOT.asm -o BOOT.bin
 
 (assuming you have created HDD img called file.img)
 
 dd if=BOOT.bin of=file.img conv=notrunc
+
+
+
 
 dd if=TANKI.bin of=file.img seek=1 conv=notrunc
