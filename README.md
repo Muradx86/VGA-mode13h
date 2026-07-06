@@ -13,14 +13,15 @@ A mini TANK game for fun.
 Technical Information About TANKI:
 -
 
-TANKI uses x87 FPU
+*TANKI uses x87 FPU
 
-TANKI finds coordinates(Trajectory) with following formulas:
--
-x = v0*(SQRT(2*H/G)
+*TANKI finds coordinates(Trajectory) with following formulas:
 
-y = v0*T^2 - GT^2/2
+*x = v0*(SQRT(2*H/G)
 
+*y = v0*T^2 - GT^2/2
+
+*Tanki uses IBM PC Speaker for voice effect
 
 For Assembling Use NASM(The Netwide Assembler) following commands:
 -
@@ -38,3 +39,12 @@ dd if=BOOT.bin of=file.img conv=notrunc
 
 
 dd if=TANKI.bin of=file.img seek=1 conv=notrunc
+
+For Emulator Use QEMU with following command:
+-
+qemu-system-i386 -drive format=raw,file=file.img,index=0,media=disk
+
+
+It works on REAL x86 HARDWARE too
+-
+All you need is VGA Compatible hardware/GPU or IBM PC
